@@ -12,3 +12,8 @@ ip_addresses = [
 for ip in ip_addresses:
     print (ip)
 
+for ip in ip_addresses:
+    if ip.startswith("192.168.") or ip.startswith("10."):
+        print(f"{ip} is an internal address.")
+    else:
+        print(f"{ip} is an external address.")
