@@ -9,11 +9,15 @@ ip_addresses = [
     "172.15.3.2"
 ]
 
-for ip in ip_addresses:
-    print (ip)
 
 for ip in ip_addresses:
-    if ip.startswith("192.168.") or ip.startswith("10."):
-        print(f"{ip} is an internal address.")
+    if ip.startswith("192.168."):
+        zone = "Private (Class C)"
+    elif ip.startswith("10."):
+        zone = "Private (Class A)"
+    elif ip.startswith("172.16.") or ip.startswith("172.17.") or ip.startswith("172.31."):
+        zone = "Private (Class B)"
     else:
-        print(f"{ip} is an external address.")
+        zone = "Public"
+
+    print(f"{ip} → {zone}")
