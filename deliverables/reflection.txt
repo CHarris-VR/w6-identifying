@@ -1,0 +1,5 @@
+# By Curtis Harris
+
+Loops made cycling through the data much eaiser.
+Using something like pandas could make it easier to incorperate sifting through data faster.
+This would be great for setting up several CSV files with programs like this to quickly analyze.
