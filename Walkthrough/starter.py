@@ -10,7 +10,7 @@ ip_addresses = [
 ]
 
 
-for ip in ip_addresses:
+ for ip in ip_addresses:
     if ip.startswith("192.168."):
         zone = "Private (Class C)"
     elif ip.startswith("10."):
